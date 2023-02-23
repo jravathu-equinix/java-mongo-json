@@ -11,7 +11,7 @@ public class MyMongo {
     JSONArray userList = new JSONArray();
 
     /**
-     * MyMongo method (constructor) here creates a new json file with the name given in parameter.
+     * MyMongo method (constructor) here creates a new collection with the name given in parameter.
      * @param filename
      */
     MyMongo(String filename)
@@ -29,7 +29,7 @@ public class MyMongo {
 
 
     /**
-     * insert function is used here to add single collection to a database
+     * insert function is used here to add single document to a collection
      * @param id
      * @param firstname
      * @param lastname
@@ -57,7 +57,7 @@ public class MyMongo {
 
 
     /**
-     * find function with no parameters is used to display all collections inside the json file
+     * find function with no parameters is used to display all documents inside the collection
      * does not take any parameters
      * @return JSONArray
      */
