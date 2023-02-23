@@ -99,5 +99,21 @@ public class MyMongo {
             return false;
         }
     }
+    
+    /**
+     * drop method is used to delete collection
+     * @return true or false
+     */
+    public boolean drop()
+    {
+        try
+        {
+            return this.file.delete();
+        } catch (Exception e)
+        {
+            e.printStackTrace();
+            return false;
+        }
+    }
 
 }
