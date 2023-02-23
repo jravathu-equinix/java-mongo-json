@@ -83,7 +83,7 @@ public class MyMongo {
     }
 
     /**
-     * remove method is used to delete the json file
+     * remove method is used to delete the content of json file - deleting documents from collection
      * @return true or false
      */
     public boolean remove()
