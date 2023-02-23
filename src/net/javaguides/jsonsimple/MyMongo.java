@@ -115,5 +115,32 @@ public class MyMongo {
             return false;
         }
     }
+    
+    /**
+     * to update value of a key based on id
+     * @param id
+     * @param key
+     * @param value
+     * @return
+     */
+    public boolean update(int id, String key, String value) {
+        JSONArray arr = find();
+        try{
+            for (int i = 0; i < arr.size(); i++)
+            {
+                JSONObject item = (JSONObject) arr.get(i);
+                if(item.containsValue(id))
+                {
+                    item.remove(key);
+                    item.put(key,value);
+                }
+            }
+            return true;
+        } catch (Exception e)
+        {
+            e.printStackTrace();
+            return false;
+        }
+    }
 
 }
