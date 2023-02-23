@@ -20,5 +20,8 @@ public class Main
 
         // read function - display all
         System.out.println(m.find());
+        
+        // delete data - documents from collection
+        System.out.println(m.remove());
     }
 }
