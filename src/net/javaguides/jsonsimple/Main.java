@@ -18,6 +18,9 @@ public class Main
         System.out.println("insertion: "+collection.insert(1,"ravathu","jahnavi", "rj@email.com"));
         System.out.println("insertion: "+collection.insert(2,"ravathu","jahnavi", "rj@email.com"));
 
+        // update function - update value of key given id of JSONObject
+        collection.update(1,"firstname", "millie");
+        
         // read function - display all documents
         System.out.println(collection.find());
         
